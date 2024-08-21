@@ -22,7 +22,7 @@ function serve() {
 function scss() {
   const plugins = [autoprefixer(), mediaquery()];
   return gulp
-    .src("src/**/*.scss")
+    .src("src/layouts/default.scss")
     .pipe(sass())
     .pipe(concat("bundle.css"))
     .pipe(postcss(plugins))

@@ -34,6 +34,58 @@ a:hover {
   text-decoration: underline;
 }
 
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list {
+  list-style: none;
+  gap: 20px;
+}
+
+.list li {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.list li a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.list li a:hover {
+  color: tomato;
+}
+
+.card {
+  min-inline-size: 300px;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+  border-radius: 4px;
+}
+
+.card__image {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card__content {
+  padding: 20px;
+  font-size: 24px;
+}
+
 @media (max-width: 768px) {
   body {
     background-color: blue;
