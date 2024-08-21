@@ -20,7 +20,7 @@ function serve() {
 }
 
 function scss() {
-  const plugins = [autoprefixer(), mediaquery(), cssnano()];
+  const plugins = [autoprefixer(), mediaquery()];
   return gulp
     .src("src/**/*.scss")
     .pipe(sass())

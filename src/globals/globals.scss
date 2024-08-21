@@ -1,7 +1,17 @@
+$bgc: #1e1e1e;
+$tc: #f5f5f5;
+$tablet-size: 768px;
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+body {
+  background-color: $bgc;
+  color: $tc;
+  margin: 0;
 }
 
 h1,
@@ -25,4 +35,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: $tablet-size) {
+  body {
+    background-color: blue;
+  }
 }
